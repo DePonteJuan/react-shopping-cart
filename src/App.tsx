@@ -42,7 +42,7 @@ const App = () =>{
   const handleAddToCart = (clickedItem: CartItemType) => {
     setCartItems(prev => {
       //1. Is the item already added in the cart?
-      const isItemCart = prev.find(item => item.id == clickedItem.id)
+      const isItemCart = prev.find(item => item.id === clickedItem.id)
       if (isItemCart){
         return prev.map(item => 
           item.id === clickedItem.id 
